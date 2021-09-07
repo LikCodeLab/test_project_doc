@@ -1,0 +1,73 @@
+site_name: test_project
+site_author: kennie
+site_description: 项目文档描述
+copyright: Copyright &copy; 2021 kennie
+
+repo_name: GitHub
+repo_url: https://github.com/kenniecode/test_project_doc
+
+extra_css:
+  - css/extra.css
+
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: docs/material
+  palette:
+    scheme: drake
+    primary: white
+  font: false
+  language: 'zh'
+  features:
+    - search.highlight
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+
+
+nav:
+  - 使用: index.md
+  - 协程请求: coroutine-request.md
+  - 同步请求: sync-request.md
+  - ViewModel: view-model.md
+  - 请求对象: request.md
+  - 全局配置: config.md
+  - 转换数据:
+      - 创建转换器: converter.md
+      - 特殊结构解析: convert-special.md
+      - kotlin-serialization: kotlin-serialization.md
+      - 数据模型生成插件: model-generate.md
+  - 自动化:
+      - 自动加载框: auto-dialog.md
+      - 自动缺省页: auto-state.md
+      - 自动下拉刷新: auto-refresh.md
+      - 自动分页加载: auto-page.md
+  - 创建作用域: scope.md
+  - 切换线程: switch-thread.md
+  - OkHttpClient: okhttp-client.md
+  - 错误处理: error-handle.md
+  - 定位异常: exception-track.md
+  - 拦截器: interceptor.md
+  - 标签: tag.md
+  - 上传文件: upload-file.md
+  - 下载文件: download-file.md
+  - 进度监听: progress.md
+  - 取消请求: cancel.md
+  - Https证书: https.md
+  - 重复请求: unique.md
+  - 节流阀: debounce.md
+  - 最快请求结果: fastest.md
+  - 日志拦截器: log-recorder.md
+  - 轮循器/倒计时: interval.md
+  - Callback: callback.md
+  - 更新日志: updates.md
+  - 3.x文档: api/index.html
